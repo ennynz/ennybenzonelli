@@ -5,9 +5,9 @@
     %title Enny Benzonelli | Web Designer, Editor &amp; Radio Host
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/foundation.css", :rel => "stylesheet"}/
+    %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Poppins:300,400,700", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Poiret+One", :rel => "stylesheet", :type => "text/css"}/
   %body
     .top-bar
@@ -29,9 +29,13 @@
           %a{:href => '#'}
             CONTACT
     %header
-      %h1.title
-        %span{:style => "color: #f2f2f2"} ENNY
-        = succeed "BENZONELLI" do
-          %br/
-      %h2.subtitle web designer, editor &amp;<br> radio host
-      %i.fa.fa-arrow-circle-down
+      .main
+        %h1.title
+          %span{:style => "color: #f2f2f2"} ENNY
+          = succeed "BENZONELLI" do
+            %br/
+        %h2.subtitle web designer, editor &amp;<br> radio host
+      .main-pic
+        %img{:src => "img/enny-portrait-test.png", :alt => ""}/
+      .scroll-down
+        %i.fa.fa-arrow-circle-down
