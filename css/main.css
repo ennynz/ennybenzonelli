@@ -1,6 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Poppins', sans-serif; }
 
 nav {
   opacity: .98;
@@ -9,45 +8,39 @@ nav {
   top: 0;
   z-index: 1000;
   width: 100%;
-  height: 3.4rem;
-}
-
-nav h1 {
-  font-family: 'Poiret One', cursive;
-  font-size: 2.5rem;
-  margin-left: 2rem;
-  float: left;
-}
-
-nav ul {
-  float: right;
-  margin-right: 2rem;
-}
-
-nav li {
-  display: inline;
-  line-height: 4rem;
-}
-
-nav li a {
-  text-decoration: none;
-  color: #f2f2f2;
-  padding: .8rem;
-  font-size: 1rem;
-  transition: all 300ms ease;
-}
-
-nav li a:hover {
-  color: #40c0c9;
-}
+  height: 3.4rem; }
+  nav h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    float: left; }
+  nav ul {
+    float: right;
+    margin-right: 2rem; }
+  nav li {
+    display: inline;
+    line-height: 4rem; }
+    nav li a {
+      text-decoration: none;
+      color: #f2f2f2;
+      padding: .8rem;
+      font-size: 1rem;
+      transition: all 300ms ease; }
+    nav li a:hover {
+      color: #40c0c9; }
 
 .top-bar {
-  height: 3.4rem;
+  height: 5rem;
   position: fixed;
-  top: 0;
+  top: -1rem;
   width: 100%;
   z-index: 200;
-}
+  background-color: #989090;
+  -webkit-transform: skew(0deg, -1deg);
+  -moz-transform: skew(0deg, -1deg);
+  -ms-transform: skew(0deg, -1deg);
+  -o-transform: skew(0deg, -1deg);
+  transform: skew(0deg, -1deg); }
 
 header {
   background: -webkit-radial-gradient(right, ellipse cover, #7d7e7d 0%, #444444 100%);
@@ -57,23 +50,19 @@ header {
   background-size: cover;
   padding-top: 0;
   height: 100vh;
-  position: relative;
-}
+  position: relative; }
 
 h1 {
   font-size: 4rem;
-  color: #40c0c9;
-}
+  color: #40c0c9; }
 
 h2 {
-  color: #f2f2f2;
-}
+  color: #f2f2f2; }
 
 .main {
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
-}
+  transform: translateY(-50%); }
 
 .title {
   font-family: 'Poiret One', cursive;
@@ -84,8 +73,7 @@ h2 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-left: 5rem;
-}
+  padding-left: 5rem; }
 
 .subtitle {
   font-family: 'Poiret One', cursive;
@@ -95,60 +83,55 @@ h2 {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-left: 5rem;
-}
+  padding-left: 5rem; }
 
 .scroll-down {
   color: #f2f2f2;
   font-size: 4rem;
   text-align: center;
   position: relative;
-  top: 50%;
-}
+  top: 50%; }
 
 .main-pic {
   position: absolute;
   bottom: 0;
-  right: 36.22rem;
-}
-
-.main-pic img {
-  width: 200%;
-  max-width: 200%;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}
+  right: 36.22rem; }
+  .main-pic img {
+    width: 200%;
+    max-width: 200%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1); }
 
 .banner-1 {
   width: 100%;
-  height: 20rem;
-  background-image: url(../img/intro01.jpg);
+  height: 53rem;
+  background-color: #f2f2f2;
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}
+  background-attachment: fixed; }
 
 .container-1 {
   position: relative;
-  top: 8rem;
-  right: 3rem;
-}
-
-.container-1 h2 {
-  color: #40c0c9;
-  font-family: 'Poiret One', cursive;
-  font-size: 2.5rem;
-  text-align: right;
-  text-transform: uppercase;
-}
-
-.container-1 p {
-  color: #f2f2f2;
-  text-align: right;
-}
+  padding: 5rem 7rem; }
+  .container-1 .row {
+    max-width: 100%; }
+  .container-1 h2 {
+    color: #40c0c9;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    text-align: right;
+    text-transform: uppercase; }
+  .container-1 p {
+    margin-top: 2rem;
+    color: #989090;
+    text-align: left;
+    line-height: 1.8rem; }
+  .container-1 .video {
+    margin-top: 3rem; }
+  .container-1 iframe {
+    margin: auto;
+    display: block; }
 
 .banner-2 {
   width: 100%;
@@ -159,5 +142,4 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
   filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-}
+  -webkit-filter: grayscale(1); }

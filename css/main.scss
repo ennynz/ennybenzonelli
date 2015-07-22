@@ -40,13 +40,22 @@ nav {
 }
 
 .top-bar {
-  height: 3.4rem;
+  height: 5rem;
   position: fixed;
-  top: 0;
+  top: -1rem;
   width: 100%;
   z-index: 200;
-  
+  background-color: #989090;
+  -webkit-transform: skew(0deg, -1deg);
+  -moz-transform: skew(0deg, -1deg);
+  -ms-transform: skew(0deg, -1deg);
+  -o-transform: skew(0deg, -1deg);
+  transform: skew(0deg, -1deg);
 }
+
+
+  
+
 
 //HEADER
 
@@ -59,6 +68,7 @@ header {
   padding-top: 0;
   height: 100vh;
   position: relative;
+
 }
 
 h1 {
@@ -125,21 +135,21 @@ h2 {
 
 .banner-1 {
   width: 100%;
-  height: 20rem;
-  background-image: url(../img/intro01.jpg);
+  height: 53rem;
+  background-color: #f2f2f2;
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
+  
 }
 
 .container-1 {
   position: relative;
-  top: 8rem;
-  right: 3rem;
-  
+  padding: 5rem 7rem;
+  .row {
+    max-width: 100%;
+  }
   h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
@@ -148,8 +158,18 @@ h2 {
     text-transform: uppercase;
   }
   p {
-    color: #f2f2f2;
-    text-align: right;
+    margin-top: 2rem;
+    color: #989090;
+    text-align: left;
+    line-height: 1.8rem;
+  }
+  .video {
+    margin-top: 3rem;
+  }
+  
+  iframe {
+    margin: auto;
+    display: block;
   }
 }
 
