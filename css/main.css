@@ -2,7 +2,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/*NAVIGATION*/
 nav {
   opacity: .98;
   font-size: .8rem;
@@ -50,7 +49,6 @@ nav li a:hover {
   z-index: 200;
 }
 
-/*HEADER*/
 header {
   background: -webkit-radial-gradient(right, ellipse cover, #7d7e7d 0%, #444444 100%);
   background-attachment: fixed;
@@ -111,12 +109,55 @@ h2 {
 .main-pic {
   position: absolute;
   bottom: 0;
-  right: 20rem;
+  right: 36.22rem;
 }
 
 .main-pic img {
   width: 200%;
   max-width: 200%;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.banner-1 {
+  width: 100%;
+  height: 20rem;
+  background-image: url(../img/intro01.jpg);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+}
+
+.container-1 {
+  position: relative;
+  top: 8rem;
+  right: 3rem;
+}
+
+.container-1 h2 {
+  color: #40c0c9;
+  font-family: 'Poiret One', cursive;
+  font-size: 2.5rem;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.container-1 p {
+  color: #f2f2f2;
+  text-align: right;
+}
+
+.banner-2 {
+  width: 100%;
+  height: 50rem;
+  background-image: url(../img/sky.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
 }
