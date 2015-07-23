@@ -175,14 +175,43 @@ h2 {
 
 .banner-2 {
   width: 100%;
-  height: 50rem;
+  height: 100%;
   background-image: url(../img/sky.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
-  
-  
+  h2 {
+    color: #40c0c9;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    text-align: right;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+  }
+  p {
+    margin-top: 2rem;
+    color: #DBDBDB;
+    text-align: left;
+    line-height: 1.8rem;
+    text-shadow: 1px 1px 2px black;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: #40c0c9;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.2rem;
+    padding-top: .8rem;
+  }
+  .skills {
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+  .fa {
+    color: #40c0c9;
+    text-shadow: 1px 1px 2px black;
+  }
 }
+
+
+
