@@ -152,7 +152,7 @@ h2 {
 
 .banner-1 {
   width: 100%;
-  height: 53rem;
+  height: auto;
   background-color: #f2f2f2;
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -192,26 +192,37 @@ h2 {
 
 .banner-2 {
   width: 100%;
-  height: 100%;
+  height: 25rem;
   background-image: url(../img/sky.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  img {
+    position: absolute;
+    display: inline;
+  }
+  .container-2 {
+    position: relative;
+  }
+  
   h2 {
     color: #40c0c9;
-    font-family: 'Poiret One', cursive;
+    font-family: 'poppins', cursive;
+    font-weight: 700;
     font-size: 2.5rem;
     text-align: right;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px black;
+    padding: 4rem 4rem 1rem 6rem;
   }
   p {
     margin-top: 2rem;
     color: #DBDBDB;
-    text-align: left;
+    text-align: right;
+    font-size: 1.4rem;
     line-height: 1.8rem;
     text-shadow: 1px 1px 2px black;
+    padding: 0 4rem 0 40%;
   }
   h3 {
     text-transform: uppercase;
@@ -220,14 +231,19 @@ h2 {
     font-size: 1.2rem;
     padding-top: .8rem;
   }
+
+}
+
+.banner-3 {
   .skills {
     text-align: center;
     padding: 2.5rem 0;
+    color: #40c0c9;
   }
   .fa {
     color: #40c0c9;
-    text-shadow: 1px 1px 2px black;
   }
+
 }
 
 
