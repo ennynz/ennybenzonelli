@@ -13,9 +13,13 @@
     .top-bar
     %nav
       %h1
-        %span{:style => "color: #f2f2f2"}>ENNY
-        BENZONELLI
-        %span{:style => "color: #f2f2f2"}>.com
+        %a{:href => "#"}
+          .nav-logo
+            %object
+              %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
+          %span{:style => "color: #f2f2f2"}>ENNY
+          BENZONELLI
+          %span{:style => "color: #f2f2f2"}>.com
       %ul
         %li
           %a{:href => '#'}
@@ -47,7 +51,8 @@
           .row
             .small-6.columns
               %h2
-                From Banking to Editing
+                From Finance to Media
+              %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
             .small-6.columns
               %p
                 &nbsp;
@@ -56,8 +61,8 @@
               %p
                 In 2009 I've decided to leave my profession in the financial sector to start a new adventure. Since then a lot of things have happened. Take a look to my showreel to have a sneak peak at my editor and designer skills.
             
-          .video
-            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}
+              .video
+                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}
               
 
     %section
