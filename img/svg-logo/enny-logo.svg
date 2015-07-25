@@ -6,6 +6,9 @@
   #svg-logo {
   stroke-dasharray: 900;
   stroke-dashoffset: 900;
+  -webkit-animation: draw 4.5s forwards linear;
+  -moz-animation: draw 4.5s forwards linear;
+  -o-animation: draw 4.5s forwards linear;
   animation: draw 4.5s forwards linear;
   fill: #4f4f4f;
   transition: all ease;
