@@ -64,6 +64,10 @@ header {
   padding-top: 0;
   height: 100vh;
   position: relative; }
+  header embed {
+    width: 6rem;
+    position: relative;
+    margin: 0 0 5rem 5rem; }
 
 h1 {
   font-size: 4rem;
@@ -103,15 +107,14 @@ h2 {
   font-size: 4rem;
   text-align: center;
   position: relative;
-  top: 50%; }
+  top: 40%; }
 
 .main-pic {
   position: absolute;
   bottom: 0;
-  right: 36.22rem; }
+  right: 1rem; }
   .main-pic img {
-    width: 200%;
-    max-width: 200%;
+    width: 100%;
     filter: grayscale(1);
     -webkit-filter: grayscale(1); }
 
@@ -133,7 +136,7 @@ h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
     font-size: 2.5rem;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase; }
   .container-1 p {
     margin-top: 2rem;
@@ -143,8 +146,11 @@ h2 {
   .container-1 .video {
     margin-top: 3rem; }
   .container-1 iframe {
-    margin: auto;
+    margin: 0;
     display: block; }
+  .container-1 img {
+    display: block;
+    margin: auto; }
 
 .banner-2 {
   width: 100%;
@@ -158,23 +164,23 @@ h2 {
     position: absolute;
     display: inline; }
   .banner-2 .container-2 {
-    position: relative; }
+    padding: 1rem;
+    background: rgba(203, 203, 203, 0.5);
+    margin: 6rem 4rem 0 0;
+    width: 40%;
+    float: right; }
   .banner-2 h2 {
-    color: #40c0c9;
-    font-family: 'poppins', cursive;
+    color: #0d454a;
+    font-family: 'Poiret One', cursive;
     font-weight: 700;
     font-size: 2.5rem;
-    text-align: right;
-    text-transform: uppercase;
-    padding: 4rem 4rem 1rem 6rem; }
+    text-align: left;
+    text-transform: uppercase; }
   .banner-2 p {
     margin-top: 2rem;
-    color: #DBDBDB;
-    text-align: right;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    text-shadow: 1px 1px 2px black;
-    padding: 0 4rem 0 40%; }
+    color: #403d3d;
+    text-align: left;
+    line-height: 1.8rem; }
   .banner-2 h3 {
     text-transform: uppercase;
     color: #40c0c9;

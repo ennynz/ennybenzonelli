@@ -9,43 +9,54 @@
     <link href='css/main.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <script src='js/min/modernizr.js'></script>
+    <script src='js/min/jquery-1.11.3.min.js'></script>
+    <script src='js/min/skrollr.js'></script>
+    <script src='js/min/app-min.js'></script>
   </head>
   <body>
-    <div class='top-bar'></div>
-    <nav>
-      <h1>
-        <a href='#'>
-          <div class='nav-logo'>
-            <object>
-              <embed src='img/svg-logo/enny-logo.svg' type=''>
-            </object>
-          </div><span style='color: #f2f2f2'>ENNY</span>BENZONELLI<span style='color: #f2f2f2'>.com</span></a>
-      </h1>
-      <ul>
-        <li>
+    <div class='menu'>
+      <div class='top-bar'>
+        &nbsp;
+      </div>
+      <nav>
+        <h1>
           <a href='#'>
-            HOME
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            ABOUT
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            PORTFOLIO
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            CONTACT
-          </a>
-        </li>
-      </ul>
-    </nav>
+            <div class='nav-logo'>
+              <object>
+                <embed src='img/svg-logo/enny-logo.svg' type=''>
+              </object>
+            </div><span style='color: #f2f2f2'>ENNY</span>BENZONELLI<span style='color: #f2f2f2'>.com</span></a>
+        </h1>
+        <ul>
+          <li>
+            <a href='#'>
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              PORTFOLIO
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              CONTACT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <header>
       <div class='main'>
+        <object class='main-logo'>
+          <embed src='img/svg-logo/enny-logo.svg' type=''>
+        </object>
         <h1 class='title'>
           <span style='color: #f2f2f2'>ENNY</span>
           <br>BENZONELLI
@@ -67,12 +78,6 @@
               <h2>
                 From Finance to Media
               </h2>
-              <img alt='' src='img/banker-editor-cartoon.png'>
-            </div>
-            <div class='small-6 columns'>
-              <p>
-                &nbsp;
-              </p>
               <p>
                 It takes a lot of courage to jump from a career to another, but when you do it, the rewards are priceless.
               </p>
@@ -82,6 +87,9 @@
               <div class='video'>
                 <iframe allowfullscreen='' frameborder='0' height='315' src='https://www.youtube.com/embed/nwySvEfundU' width='560'></iframe>
               </div>
+            </div>
+            <div class='small-6 columns'>
+              <img alt='' src='img/banker-editor-cartoon.png'>
             </div>
           </div>
         </div>
@@ -156,5 +164,15 @@
         </div>
       </div>
     </section>
+    <script>
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 800) {
+          $('.menu').fadeIn("slow");
+        } else {
+          $('.menu').fadeOut();
+        }
+      });
+    </script>
   </body>
 </html>

@@ -85,7 +85,11 @@ header {
   padding-top: 0;
   height: 100vh;
   position: relative;
-
+  embed {
+    width: 6rem;
+    position: relative;
+    margin: 0 0 5rem 5rem;
+  }
 }
 
 h1 {
@@ -132,16 +136,15 @@ h2 {
   font-size: 4rem;
   text-align: center;
   position: relative;
-  top: 50%;
+  top: 40%;
 }
 
 .main-pic {
   position: absolute;
   bottom: 0;
-  right: 36.22rem;
+  right: 1rem;
   img {
-    width: 200%;
-    max-width: 200%;
+    width: 100%;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
   }
@@ -171,7 +174,7 @@ h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
     font-size: 2.5rem;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase;
   }
   p {
@@ -185,8 +188,12 @@ h2 {
   }
   
   iframe {
-    margin: auto;
+    margin: 0;
     display: block;
+  }
+  img {
+    display: block;
+    margin: auto;
   }
 }
 
@@ -203,26 +210,25 @@ h2 {
     display: inline;
   }
   .container-2 {
-    position: relative;
+    padding: 1rem;
+    background: rgba(203, 203, 203, 0.50);
+    margin: 6rem 4rem 0 0;
+    width: 40%;
+    float: right;
   }
-  
   h2 {
-    color: #40c0c9;
-    font-family: 'poppins', cursive;
+    color: #0d454a;
+    font-family: 'Poiret One', cursive;
     font-weight: 700;
     font-size: 2.5rem;
-    text-align: right;
+    text-align: left;
     text-transform: uppercase;
-    padding: 4rem 4rem 1rem 6rem;
   }
   p {
     margin-top: 2rem;
-    color: #DBDBDB;
-    text-align: right;
-    font-size: 1.4rem;
+    color: #403d3d;
+    text-align: left;
     line-height: 1.8rem;
-    text-shadow: 1px 1px 2px black;
-    padding: 0 4rem 0 40%;
   }
   h3 {
     text-transform: uppercase;
