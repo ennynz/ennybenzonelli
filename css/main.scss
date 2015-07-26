@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #4f4f4f;
 }
 
 //NAVIGATION
@@ -46,9 +47,9 @@ nav {
       padding: .8rem;
       font-size: 1rem;
       transition: all 300ms ease;
-    }
-    a:hover {
-      color: #40c0c9;
+      &:hover {
+        color: #40c0c9;
+      }
     }
     .nav-logo {
       position: relative;
@@ -137,6 +138,16 @@ h2 {
   text-align: center;
   position: relative;
   top: 40%;
+  text-decoration: none;
+  a {
+    color: #f2f2f2;
+    opacity: 0.60;
+    transition: all 500ms ease;
+    &:hover {
+      opacity: 1;
+    }
+  }
+    
 }
 
 .main-pic {
@@ -161,9 +172,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
 }
-
 .container-1 {
   position: relative;
   padding: 5rem 7rem;
@@ -199,7 +208,7 @@ h2 {
 
 .banner-2 {
   width: 100%;
-  height: 25rem;
+  height: 28rem;
   background-image: url(../img/sky.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -212,7 +221,7 @@ h2 {
   .container-2 {
     padding: 1rem;
     background: rgba(203, 203, 203, 0.50);
-    margin: 6rem 4rem 0 0;
+    margin: 5rem 4rem 0 0;
     width: 40%;
     float: right;
   }
@@ -241,6 +250,17 @@ h2 {
 }
 
 .banner-3 {
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  h2{
+    color: #40c0c9;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2.5rem 0 2.5rem 0;
+  }
   .skills {
     text-align: center;
     padding: 2.5rem 0;
@@ -249,8 +269,153 @@ h2 {
   .fa {
     color: #40c0c9;
   }
-
+}
+.banner-4 {
+  width: 100%;
+  height: auto;
+  background-image: -moz-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-image: -webkit-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-image: -ms-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-image: linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 2rem 5rem 2rem;
+  h2{
+    color: #40c0c9;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5rem 0 2.5rem 0;
+  }
+  p {
+  margin-top: 2rem;
+  color: #f2f2f2;
+  text-align: justify;
+  line-height: 1.8rem;
+  padding: 0 1rem;
+    
+  }
+}
+.banner-5 {
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  padding-top: 2.5rem;
+  .container-5 {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  h2{
+    color: #40c0c9;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 2.5rem 0 1.2rem 0;
+  }
+  .contact-info {
+    padding-bottom: 1.2rem;
+  }
+  .skills {
+    text-align: left;
+    padding: 2.5rem 0;
+    color: #40c0c9;
+  }
+  .fa {
+    color: #40c0c9;
+  }
+}
+.contact-pic {
+  position: relative;
+  bottom: -2.5rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
+//FORM
 
+input, textarea {
+  padding: .5rem;
+  border: solid 1px #E5E5E5;
+  outline: 0;
+  font: normal .8rem/100% Helvetica, sans-serif;
+  width: 14rem;
+  background: #ffffff;
+  box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem; 
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem; 
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
+  background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+  background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+}
+
+textarea {
+  width: 28rem;
+  max-width: 28rem;
+  height: 9rem;
+  line-height: 150%;
+}
+
+input, textarea {
+  transition: all 500ms ease;
+  &:hover {
+    border-color: #40c0c9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 .5rem;
+  }
+  &:focus {
+    border-color: #40c0c9;
+  }
+}
+
+.contact-form {
+  label {
+    margin-left: .7rem;
+    font-size: .8rem;
+    color: #5d5959;
+  }
+  p {
+    padding: .4rem 0;
+  }
+}
+
+.submit {
+  input {
+    width: auto;
+    padding: .5rem 1rem;
+    background: #403d3d;
+    border: 0;
+    font-size: .8rem;
+    color: #fff;
+    border-radius: .5rem;
+    transition: all 500ms ease;
+    &:hover {
+      background: #40c0c9;
+    }
+  }
+}
+#sctn-6 {
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    background-color: #4f4f4f;
+    -webkit-transform: skew(0deg, -1deg);
+    -moz-transform: skew(0deg, -1deg);
+    -ms-transform: skew(0deg, -1deg);
+    -o-transform: skew(0deg, -1deg);
+    transform: skew(0deg, -1deg);
+    margin-top: -0.8rem;
+  }
+  .container-footer {
+    position: relative;
+    padding-top: 3rem;
+    p {
+      text-align: center;
+      font-size: .8rem;
+      color: #bebebe;
+    }
+  }
+}
 

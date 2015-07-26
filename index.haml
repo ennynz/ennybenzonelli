@@ -13,13 +13,14 @@
     %script{:src => "js/min/jquery-1.11.3.min.js"}
     %script{:src => "js/min/skrollr.js"}
     %script{:src => "js/min/app-min.js"}
+    %script{:src => "js/smoothscroll.js", :type => "text/javascript"}
   %body
     .menu
       .top-bar
         &nbsp;
       %nav
         %h1
-          %a{:href => "#"}
+          %a.smoothScroll{:href => "#sctn-0"}
             .nav-logo
               %object
                 %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
@@ -28,18 +29,21 @@
             %span{:style => "color: #f2f2f2"}>.com
         %ul
           %li
-            %a{:href => '#'}
+            %a.smoothScroll{:href => '#sctn-0'}
               HOME
           %li
-            %a{:href => '#'}
+            %a.smoothScroll{:href => '#sctn-1'}
               ABOUT
           %li
-            %a{:href => '#'}
-              PORTFOLIO
+            %a.smoothScroll{:href => '#sctn-2'}
+              SKILLS
           %li
-            %a{:href => '#'}
+            %a.smoothScroll{:href => '#sctn-4'}
+              RADIO
+          %li
+            %a.smoothScroll{:href => '#sctn-5'}
               CONTACT
-    %header
+    %header#sctn-0
       .main
         %object.main-logo
           %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
@@ -51,9 +55,10 @@
       .main-pic
         %img{:src => "img/enny-portrait-test.png", :alt => ""}/
       .scroll-down
-        %i.fa.fa-arrow-circle-down
+        %a.smoothScroll{:href => '#sctn-1'}
+          %i.fa.fa-arrow-circle-down
     
-    %section
+    %section#sctn-1
       .banner-1
         .container-1
           .row
@@ -68,11 +73,7 @@
                 %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}  
             .small-6.columns
               %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
-            
-              
-              
-
-    %section
+    %section#sctn-2
       .banner-2
         .hanging-pic
           %img{:src => "img/hanging.png", :alt => ""}/
@@ -81,10 +82,15 @@
             A Jack of All trades
           %p
             Some people may think that a Jack of all Trades is a Master of None, but I'd like to think of myself as a Master of Some.
+          %p
+            My skills are various and I like to have the ability to change into different positions. It makes life more interesting and full of new challenges every day.
 
-    %section
+    %section#sctn-3
       .banner-3
         .row.skills
+          .small-12.colums
+            %h2
+              My skills in a blink of an eye
           .small-4.columns.skills
             %i
               .fa.fa-scissors.fa-2x
@@ -115,6 +121,64 @@
               .fa.fa-music.fa-2x
             %h3
               Radio Host
+    %section#sctn-4
+      .banner-4
+        .row
+          .small-12.columns
+            %h2
+              Every Sunday I'm on radio...
+          .small-6.columns
+            %p
+              Join the tribe of KickArts, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the PlanetAudio website.
+            %p
+              I've the imponderable joy to be Richard Green's co-host and when he is on holiday I will run the show. It is a fun adventure that is lasting for over 3 years and our audience is growing every week.
+          .small-6.columns    
+            %p
+              Other then working on the show itself I've coded and designed the KickArts webpage at WebKea with the help of my colleague Benji Dalton.
+            %p
+              Also take a look at WebKea and discover how you get also get a brilliant online presence for yourself or your business.
+    %section#sctn-5
+      .banner-5
+        .row
+          .small-6.columns
+            .contact-pic
+              %img{:src => "img/contact-me.png", :alt => ""}/
+          .small-6.columns
+            .container-5
+              %h2
+                Contact me
+              %p.contact-info
+                Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
+              %form.contact-form{:action => "#", :method => "post"}
+                / the redirect_to is optional, the form will redirect to the referrer on submission
+                %input{:name => "redirect_to", :type => "hidden", :value => "http://google.com"}/
+                / all your input fields here....
+                %p.firstname
+                  %input.form-control{:name => "firstname", :required => "", :type => "text"}/
+                  %label First Name
+                %p.lastname
+                  %input.form-control{:name => "lastname", :type => "text"}/
+                  %label Last Name
+                %p.phone
+                  %input.form-control{:name => "phone", :type => "text"}/
+                  %label Phone Number
+                %p.email
+                  %input.form-control{:name => "email", :type => "email"}/
+                  %label Email
+                %p.message
+                  %textarea.feedback{:name => "feedback"}
+                %p.submit    
+                  %input{:type => "button", :value => "SEND"}/ 
+    %section#sctn-6
+      .footer
+        &nbsp;
+      .container-footer  
+        %p
+          &copy; Enny Benzonelli, 2015
+        %p
+          Site by WEBKEA
+
+    
     :javascript
       $(document).scroll(function() {
         var y = $(this).scrollTop();
