@@ -17,7 +17,7 @@
     %script{:src => "js/min/app-min.js"}
     %script{:src => "js/smoothscroll.js", :type => "text/javascript"}
   %body
-    .menu
+    .menu.is-hidden
       .top-bar
         &nbsp;
       %nav
@@ -131,7 +131,7 @@
               Every Sunday I'm on radio...
           .small-6.columns
             %p
-              Join the tribe of KickArts, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the PlanetAudio website.
+              Join the tribe of <a href ="www.kickarts.org.nz">KickArts</a>, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the PlanetAudio website.
             %p
               I've the imponderable joy to be Richard Green's co-host and when he is on holiday I will run the show. It is a fun adventure that is lasting for over 3 years and our audience is growing every week.
           .small-6.columns    
@@ -179,14 +179,13 @@
           &copy; Enny Benzonelli, 2015
         %p
           Site by WEBKEA
-
-    
     :javascript
       $(document).scroll(function() {
         var y = $(this).scrollTop();
-        if (y > 800) {
-          $('.menu').fadeIn("slow");
+        
+        if (y > 600) {
+          $('.menu').removeClass('is-hidden').addClass('is-showing');
         } else {
-          $('.menu').fadeOut();
+          $('.menu').removeClass('is-showing').addClass('is-hidden');
         }
       });       

@@ -57,6 +57,16 @@ nav {
   }
 }
 
+.is-hidden {
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
+.is-showing {
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+
 .top-bar {
   height: 5rem;
   position: fixed;
@@ -215,6 +225,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
   img {
     position: absolute;
     display: inline;
@@ -222,10 +233,11 @@ h2 {
   .container-2 {
     padding: 1rem;
     background: rgba(203, 203, 203, 0.50);
-    margin: 5rem 4rem 0 0;
     width: 60%;
-    float: right;
-    position: relative;
+    right: 6rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   h2 {
     color: #0d454a;
