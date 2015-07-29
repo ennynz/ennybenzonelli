@@ -87,13 +87,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/enny-portrait-test.png": {
+	"\/img\/enny-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 116129,
-		"inputAbbreviatedPath": "\/img\/enny-portrait-test.png",
-		"outputAbbreviatedPath": "\/img\/enny-portrait-test.png",
+		"inputAbbreviatedPath": "\/img\/enny-portrait.png",
+		"outputAbbreviatedPath": "\/img\/enny-portrait.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -1,6 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #4f4f4f;
+  a {
+    text-decoration: none;
+    color: #bebebe;
+  }
 }
 
 //NAVIGATION
@@ -22,7 +26,6 @@ nav {
     display: inline;
     vertical-align: middle;
   }
-  
   embed {
     height: 3rem;
     padding-right: .5rem;
@@ -56,17 +59,14 @@ nav {
     }
   }
 }
-
 .is-hidden {
   opacity: 0;
   transition: opacity 600ms ease;
 }
-
 .is-showing {
   opacity: 1;
   transition: opacity 600ms ease;
 }
-
 .top-bar {
   height: 5rem;
   position: fixed;
@@ -80,10 +80,6 @@ nav {
   -o-transform: skew(0deg, -1deg);
   transform: skew(0deg, -1deg);
 }
-
-
-  
-
 
 //HEADER
 
@@ -101,73 +97,64 @@ header {
     position: relative;
     margin: 0 0 5rem 5rem;
   }
-}
-
-h1 {
-  font-size: 4rem;
-  color: #40c0c9;
-  
-}
-
-h2 {
-  color: #f2f2f2;
-}
-
-.main {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.title {
-  font-family: 'Poiret One', cursive;
-  font-size: 5.5rem;
-  margin-top: 0;
-  text-align: left;
-  line-height: 5rem;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding-left: 5rem;
-}
-
-.subtitle {
-  font-family: 'Poiret One', cursive;
-  font-size: 2.75rem;
-  text-align: left;
-  line-height: 3rem;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  padding-left: 5rem;
-}
-
-.scroll-down {
-  color: #f2f2f2;
-  font-size: 4rem;
-  text-align: center;
-  position: relative;
-  top: 40%;
-  text-decoration: none;
-  a {
+  .main {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .row {
+    max-width: 95%;
+  }
+  h1 {
+    font-size: 4rem;
+    color: #40c0c9;
+  }
+  h2 {
     color: #f2f2f2;
-    opacity: 0.60;
-    transition: all 500ms ease;
-    &:hover {
-      opacity: 1;
+  }
+  .title {
+    font-family: 'Poiret One', cursive;
+    font-size: 5.5rem;
+    margin-top: 0;
+    text-align: left;
+    line-height: 5rem;
+    transform: translateY(-50%);
+    padding-left: 5rem;
+  }
+  .subtitle {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.75rem;
+    text-align: left;
+    line-height: 3rem;
+    transform: translateY(-50%);
+    padding-left: 5rem;
+  }
+  .scroll-down {
+    color: #f2f2f2;
+    font-size: 4rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    text-decoration: none;
+    a {
+      color: #f2f2f2;
+      opacity: 0.60;
+      transition: all 500ms ease;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
-    
-}
-
-.main-pic {
-  position: absolute;
-  bottom: 0;
-  right: 1rem;
-  img {
-    width: 100%;
-    filter: grayscale(1);
-    -webkit-filter: grayscale(1);
+  .main-pic {
+    bottom: 0;
+    img {
+      width: 100%;
+      filter: grayscale(1);
+      -webkit-filter: grayscale(1);
+    }
   }
 }
 
@@ -186,9 +173,6 @@ h2 {
 .container-1 {
   position: relative;
   padding: 5rem 7rem;
-  .row {
-    max-width: 100%;
-  }
   h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
@@ -203,17 +187,25 @@ h2 {
     line-height: 1.8rem;
   }
   .video {
-    margin-top: 3rem;
-  }
-  
-  iframe {
-    margin: 0;
-    display: block;
-    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }    
   }
   img {
     display: block;
-    margin: auto;
+    width: 75%;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-50%);
   }
 }
 
@@ -310,7 +302,12 @@ h2 {
   text-align: justify;
   line-height: 1.8rem;
   padding: 0 1rem;
-    
+  }
+  a {
+  transition: all 300ms ease;
+  &:hover {
+    color: #40c0c9;
+    }
   }
 }
 .banner-5 {
@@ -422,6 +419,15 @@ input, textarea {
     transform: skew(0deg, -1deg);
     margin-top: -0.8rem;
   }
+  .webkea {
+    a {
+      color: #fff;
+      transition: all 300ms ease;
+      &:hover {
+        color: #40c0c9;
+      }
+    }
+  }
   .container-footer {
     position: relative;
     padding-top: 3rem;
@@ -429,6 +435,24 @@ input, textarea {
       text-align: center;
       font-size: .8rem;
       color: #bebebe;
+    }
+    ul {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+    li {
+      display: inline;
+      padding-left: 0rem;
+      a {
+        text-decoration: none;
+        color: #f2f2f2;
+        padding: .8rem;
+        font-size: 1rem;
+        transition: all 300ms ease;
+        &:hover {
+          color: #40c0c9;
+        }
+      }
     }
   }
 }

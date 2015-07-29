@@ -47,15 +47,19 @@
               CONTACT
     %header#sctn-0
       .main
-        %object.main-logo
-          %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
-        %h1.title
-          %span{:style => "color: #f2f2f2"} ENNY
-          = succeed "BENZONELLI" do
-            %br/
-        %h2.subtitle editor, designer &amp;<br> radio host
-      .main-pic
-        %img{:src => "img/enny-portrait-test.png", :alt => ""}/
+        .row
+          .small-12.medium-6.columns
+            .main-text
+              %object.main-logo
+                %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
+              %h1.title
+                %span{:style => "color: #f2f2f2"} ENNY
+                = succeed "BENZONELLI" do
+                  %br/
+              %h2.subtitle editor, designer &amp;<br> radio host
+          .small-12.medium-6.columns   
+            .main-pic
+              %img{:src => "img/enny-portrait.png", :alt => ""}/
       .scroll-down
         %a.smoothScroll{:href => '#sctn-1'}
           %i.fa.fa-arrow-circle-down
@@ -71,10 +75,10 @@
                 It takes a lot of courage to jump from a career to another, but when you do it, the rewards are priceless.
               %p
                 In 2009 I've decided to leave my profession in the financial sector to start a new adventure. Since then a lot of things have happened. Take a look to my showreel to have a sneak peak at my editor and designer skills.
-              .video
-                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}  
             .medium-6.columns
               %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
+          .video
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}      
     %section#sctn-2
       .banner-2
         .hanging-pic
@@ -85,7 +89,7 @@
           %p
             Some people may think that a Jack of all Trades is a Master of None, but I'd like to think of myself as a Master of Some.
           %p
-            My skills are various and I like to have the ability to change into different positions. It makes life more interesting and full of new challenges every day.
+            My skills are various and I like to have the ability to change into different roles. It makes life more interesting and I like to be challenged every day.
 
     %section#sctn-3
       .banner-3
@@ -131,14 +135,14 @@
               Every Sunday I'm on radio...
           .small-6.columns
             %p
-              Join the tribe of <a href ="www.kickarts.org.nz">KickArts</a>, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the PlanetAudio website.
+              Join the tribe of <a href ="www.kickarts.org.nz">KickArts</a>, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the <a href="www.planetaudio.org.nz/kickarts">PlanetAudio</a> website.
             %p
               I've the imponderable joy to be Richard Green's co-host and when he is on holiday I will run the show. It is a fun adventure that is lasting for over 3 years and our audience is growing every week.
           .small-6.columns    
             %p
-              Other then working on the show itself I've coded and designed the KickArts webpage at WebKea with the help of my colleague Benji Dalton.
+              Other then working on the show itself I've coded and designed the <a href ="www.kickarts.org.nz">KickArts</a> webpage at <a href ="www.webkea.co.nz">WebKea</a> with the help of my colleague Benji Dalton.
             %p
-              Also take a look at WebKea and discover how you get also get a brilliant online presence for yourself or your business.
+              Also take a look at <a href ="www.webkea.co.nz">WebKea</a> and discover how you get also get a brilliant online presence for yourself or your business.
     %section#sctn-5
       .banner-5
         .row
@@ -151,7 +155,7 @@
                 Contact me
               %p.contact-info
                 Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
-              %form.contact-form{:action => "#", :method => "post"}
+              %form.contact-form{:action => "https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c", :method => "post"}
                 / the redirect_to is optional, the form will redirect to the referrer on submission
                 %input{:name => "redirect_to", :type => "hidden", :value => "http://google.com"}/
                 / all your input fields here....
@@ -177,8 +181,18 @@
       .container-footer  
         %p
           &copy; Enny Benzonelli, 2015
-        %p
-          Site by WEBKEA
+        %p.webkea
+          Site by <a href="www.webkea.co.nz">WEBKEA</a>
+        %ul.social-links
+          %li.social-icons
+            %a{:href => 'https://nz.linkedin.com/pub/enny-benzonelli/2b/328/179', :target => '_blank'}
+              .fa.fa-linkedin-square.fa-2x  
+          %li.social-icons
+            %a{:href => 'https://twitter.com/Enny_NZwww', :target => '_blank'}
+              .fa.fa-twitter-square.fa-2x            
+          %li.social-icons
+            %a{:href => 'https://instagram.com/ennynz/', :target => '_blank'}
+              .fa.fa-instagram.fa-2x            
     :javascript
       $(document).scroll(function() {
         var y = $(this).scrollTop();
