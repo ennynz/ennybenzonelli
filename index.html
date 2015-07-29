@@ -7,6 +7,7 @@
     <link href='css/foundation.css' rel='stylesheet'>
     <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
+    <link href='css/responsive.css' rel='stylesheet'>
     <link href='http://fonts.googleapis.com/css?family=Poppins:300,400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='img/favicon.png' rel='icon'>
@@ -15,6 +16,7 @@
     <script src='js/min/jquery-1.11.3.min.js'></script>
     <script src='js/min/skrollr.js'></script>
     <script src='js/min/app-min.js'></script>
+    <script src='js/app.js'></script>
     <script src='js/smoothscroll.js' type='text/javascript'></script>
   </head>
   <body>
@@ -29,8 +31,11 @@
               <object>
                 <embed src='img/svg-logo/enny-logo.svg' type=''>
               </object>
-            </div><span style='color: #f2f2f2'>ENNY</span>BENZONELLI<span style='color: #f2f2f2'>.com</span></a>
+            </div>
+            <div class='nav-title'><span style='color: #f2f2f2'>ENNY</span>BENZONELLI<span style='color: #f2f2f2'>.com</span></div>
+          </a>
         </h1>
+        <span class='menu-button menu-open'></span>
         <ul>
           <li>
             <a class='smoothScroll' href='#sctn-0'>
@@ -235,7 +240,7 @@
               </p>
               <form action='https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c' class='contact-form' method='post'>
                 <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                <input name='redirect_to' type='hidden' value='http://google.com'>
+                <input name='redirect_to' type='hidden' value='thankyou.html'>
                 <!-- all your input fields here.... -->
                 <p class='firstname'>
                   <input class='form-control' name='firstname' required='' type='text'>
@@ -295,16 +300,5 @@
         </ul>
       </div>
     </section>
-    <script>
-      $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        
-        if (y > 600) {
-          $('.menu').removeClass('is-hidden').addClass('is-showing');
-        } else {
-          $('.menu').removeClass('is-showing').addClass('is-hidden');
-        }
-      });
-    </script>
   </body>
 </html>

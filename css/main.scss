@@ -26,6 +26,9 @@ nav {
     display: inline;
     vertical-align: middle;
   }
+  .nav-title {
+    display: inline;
+  }
   embed {
     height: 3rem;
     padding-right: .5rem;
@@ -33,9 +36,10 @@ nav {
   }
   h1 {
     font-family: 'Poiret One', cursive;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-left: 2rem;
     float: left;
+    color: #40c0c9;
   }
   ul {
     float: right;
@@ -57,6 +61,17 @@ nav {
     .nav-logo {
       position: relative;
     }
+  }
+  .menu-button {
+    display: none;
+    font-size: 1.4rem;
+    float: right;
+    color: #fff;
+    line-height: 3rem;
+    margin-right: 3rem;
+  }
+  .menu-close {
+    display: none;
   }
 }
 .is-hidden {
@@ -106,6 +121,7 @@ header {
   }
   .row {
     max-width: 95%;
+    max-height: 100%;
   }
   h1 {
     font-size: 4rem;
@@ -152,9 +168,14 @@ header {
     bottom: 0;
     img {
       width: 100%;
+      max-width: 650px;
+      min-width: 400px;
       filter: grayscale(1);
       -webkit-filter: grayscale(1);
     }
+  }
+  .main-text {
+    margin-top: 4rem;
   }
 }
 

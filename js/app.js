@@ -1,16 +1,24 @@
 $(document).ready(function() {
+  // mobile menu
   $('.menu-button, ul a').click(function(){
     $('ul').toggleClass('show-menu');
     $('.menu-button').toggleClass('menu-open');
     $('.menu-button').toggleClass('menu-close');
   });
-  $(function() {
-      $('.locale-pink').click(function() {
-          $(this).find('iframe').css('pointer-events', 'all');
-      }).mouseleave(function() {
-          $(this).find('iframe').css('pointer-events', 'none');
-      });
-  });
+
+
+  //shows menu after scrolling
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+
+    if (y > 600) {
+      $('.menu').removeClass('is-hidden').addClass('is-showing');
+    } else {
+      $('.menu').removeClass('is-showing').addClass('is-hidden');
+    }
+  });  
 });
+
+
 
 

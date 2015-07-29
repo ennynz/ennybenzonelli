@@ -7,6 +7,7 @@
     %link{:href => "css/foundation.css", :rel => "stylesheet"}/
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
+    %link{:href => "css/responsive.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Poppins:300,400,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Poiret+One", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "img/favicon.png", :rel => "icon"}/
@@ -15,6 +16,7 @@
     %script{:src => "js/min/jquery-1.11.3.min.js"}
     %script{:src => "js/min/skrollr.js"}
     %script{:src => "js/min/app-min.js"}
+    %script{:src => "js/app.js"}
     %script{:src => "js/smoothscroll.js", :type => "text/javascript"}
   %body
     .menu.is-hidden
@@ -26,9 +28,11 @@
             .nav-logo
               %object
                 %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
-            %span{:style => "color: #f2f2f2"}>ENNY
-            BENZONELLI
-            %span{:style => "color: #f2f2f2"}>.com
+            .nav-title
+              %span{:style => "color: #f2f2f2"}>ENNY
+              BENZONELLI
+              %span{:style => "color: #f2f2f2"}>.com
+        %span.menu-button.menu-open
         %ul
           %li
             %a.smoothScroll{:href => '#sctn-0'}
@@ -157,7 +161,7 @@
                 Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
               %form.contact-form{:action => "https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c", :method => "post"}
                 / the redirect_to is optional, the form will redirect to the referrer on submission
-                %input{:name => "redirect_to", :type => "hidden", :value => "http://google.com"}/
+                %input{:name => "redirect_to", :type => "hidden", :value => "thankyou.html"}/
                 / all your input fields here....
                 %p.firstname
                   %input.form-control{:name => "firstname", :required => "", :type => "text"}/
@@ -193,13 +197,4 @@
           %li.social-icons
             %a{:href => 'https://instagram.com/ennynz/', :target => '_blank'}
               .fa.fa-instagram.fa-2x            
-    :javascript
-      $(document).scroll(function() {
-        var y = $(this).scrollTop();
-        
-        if (y > 600) {
-          $('.menu').removeClass('is-hidden').addClass('is-showing');
-        } else {
-          $('.menu').removeClass('is-showing').addClass('is-hidden');
-        }
-      });       
+     
