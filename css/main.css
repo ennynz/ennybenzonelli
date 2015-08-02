@@ -162,7 +162,9 @@ header {
 
 .container-1 {
   position: relative;
-  padding: 5rem 7rem; }
+  padding: 5rem 7rem 0 7rem; }
+  .container-1 .about {
+    margin-bottom: 2.5rem; }
   .container-1 h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
@@ -177,23 +179,20 @@ header {
   .container-1 .video {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0; }
+    padding-top: 2rem;
+    height: 0;
+    left: 10%;
+    right: 10%; }
     .container-1 .video iframe {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%; }
+      width: 80%;
+      height: 80%; }
   .container-1 img {
-    display: block;
-    width: 75%;
-    margin-top: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    width: 94%;
+    margin-left: 6%;
+    padding-top: 2rem; }
 
 .banner-2 {
   width: 100%;
@@ -291,7 +290,7 @@ header {
     padding-bottom: 2rem; }
   .banner-5 .container-5a {
     position: relative;
-    margin-bottom: 2rem; }
+    margin: 2.5rem 0 2rem 3.5rem; }
   .banner-5 h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
@@ -330,8 +329,8 @@ input, textarea {
   background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px); }
 
 textarea {
-  width: 28rem;
-  max-width: 28rem;
+  width: 24rem;
+  max-width: 24rem;
   height: 9rem;
   line-height: 150%; }
 

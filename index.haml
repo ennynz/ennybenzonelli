@@ -71,17 +71,21 @@
       .banner-1
         .container-1
           .row
-            .medium-6.columns
+            .small-12.columns
               %h2
                 From Finance to Media
+          .row.about
+            .small-12.medium-6.columns
               %p
                 It takes a lot of courage to jump from a career to another, but when you do it, the rewards are priceless.
               %p
                 In 2009 I've decided to leave my profession in the financial sector to start a new adventure. Since then a lot of things have happened. Take a look to my showreel to have a sneak peak at my editor and designer skills.
-            .medium-6.columns
+            .small-12.medium-6.columns
               %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
-          .video
-            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}      
+          .row
+            .small-12.columns
+              .video
+                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}      
     %section#sctn-2
       .banner-2
         .hanging-pic
@@ -148,14 +152,16 @@
               Also take a look at <a href ="www.webkea.co.nz">WebKea</a> and discover how you get also get a brilliant online presence for yourself or your business.
     %section#sctn-5
       .banner-5
-        %h2
-          Contact me
-        %p.contact-info
-          Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
+        .row
+          .small-12.columns
+            %h2
+              Contact me
+            %p.contact-info
+              Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
         .row
           .small-12.medium-6.columns
             .contact-pic
-              %img{:src => "img/contact-me.png", :alt => ""}/
+              %img{:src => "img/contact-me2.png", :alt => ""}/
           .small-12.medium-6.columns
             .container-5a
               %form.contact-form{:action => "https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c", :method => "post"}

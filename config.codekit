@@ -112,6 +112,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/contact-me2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/img\/contact-me2.png",
+		"outputAbbreviatedPath": "\/img\/contact-me2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/enny-portrait.png": {
 		"fileType": 32768,
 		"ignore": 0,
