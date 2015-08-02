@@ -74,15 +74,13 @@
             .small-12.columns
               %h2
                 From Finance to Media
-          .row.about
-            .small-12.medium-6.columns
+            .small-12.medium-pull-12.large-push-6.columns
+              %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
+            .small-12.medium-12.large-pull-6.columns
               %p
                 It takes a lot of courage to jump from a career to another, but when you do it, the rewards are priceless.
               %p
                 In 2009 I've decided to leave my profession in the financial sector to start a new adventure. Since then a lot of things have happened. Take a look to my showreel to have a sneak peak at my editor and designer skills.
-            .small-12.medium-6.columns
-              %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
-          .row
             .small-12.columns
               .video
                 %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}      
@@ -104,32 +102,32 @@
           .small-12.colums
             %h2
               My skills in a blink of an eye
-          .small-4.columns.skills
+          .small-6.medium-4.columns.skills
             %i
               .fa.fa-scissors.fa-2x
             %h3
               Editor
-          .small-4.columns.skills
+          .small-6.medium-4.columns.skills
             %i
               .fa.fa-film.fa-2x
             %h3
               Director
-          .small-4.columns.skills
+          .small-6.medium-4.columns.skills
             %i
               .fa.fa-tasks.fa-2x
             %h3
               Producer
-          .small-4.columns.skills
+          .small-6.medium-4.columns.skills
             %i
               .fa.fa-code.fa-2x
             %h3
               Web Designer
-          .small-4.columns.skills
+          .small-6.medium-4.columns.skills
             %i
               .fa.fa-paint-brush.fa-2x
             %h3
               Graphic Designer
-          .small-4.columns.skills
+          .small-6.medium-4.columns.skills
             %i 
               .fa.fa-music.fa-2x
             %h3
@@ -140,12 +138,12 @@
           .small-12.columns
             %h2
               Every Sunday I'm on radio...
-          .small-6.columns
+          .medium-6.columns
             %p
               Join the tribe of <a href ="www.kickarts.org.nz">KickArts</a>, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the <a href="www.planetaudio.org.nz/kickarts">PlanetAudio</a> website.
             %p
               I've the imponderable joy to be Richard Green's co-host and when he is on holiday I will run the show. It is a fun adventure that is lasting for over 3 years and our audience is growing every week.
-          .small-6.columns    
+          .medium-6.columns    
             %p
               Other then working on the show itself I've coded and designed the <a href ="www.kickarts.org.nz">KickArts</a> webpage at <a href ="www.webkea.co.nz">WebKea</a> with the help of my colleague Benji Dalton.
             %p
@@ -159,10 +157,7 @@
             %p.contact-info
               Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
         .row
-          .small-12.medium-6.columns
-            .contact-pic
-              %img{:src => "img/contact-me2.png", :alt => ""}/
-          .small-12.medium-6.columns
+          .small-12.medium-12.large-push-6.columns
             .container-5a
               %form.contact-form{:action => "https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c", :method => "post"}
                 / the redirect_to is optional, the form will redirect to the referrer on submission
@@ -184,6 +179,9 @@
                   %textarea.feedback{:name => "feedback"}
                 %p.submit    
                   %input{:type => "button", :value => "SEND"}/ 
+          .small-12.medium-12.large-pull-6.columns
+            .contact-pic
+              %img{:src => "img/contact-me2.png", :alt => ""}/
     %section#sctn-6
       .footer
         &nbsp;
