@@ -18,10 +18,11 @@ nav {
     color: inherit; }
   nav .nav-logo {
     position: relative;
-    display: inline;
+    display: inline-block;
     vertical-align: middle; }
   nav .nav-title {
-    display: inline; }
+    display: inline-block;
+    vertical-align: middle; }
   nav embed {
     height: 3rem;
     padding-right: .5rem;
@@ -285,9 +286,10 @@ header {
 .banner-5 {
   width: 100%;
   height: auto;
-  background-color: #f2f2f2;
-  padding-top: 2.5rem; }
+  background-color: #f2f2f2; }
   .banner-5 .container-5 {
+    padding-bottom: 2rem; }
+  .banner-5 .container-5a {
     position: relative;
     margin-bottom: 2rem; }
   .banner-5 h2 {
@@ -296,7 +298,9 @@ header {
     font-size: 2.5rem;
     text-align: left;
     text-transform: uppercase;
-    padding: 2.5rem 0 1.2rem 0; }
+    padding: 5rem 2.5rem 1.5rem 2.5rem; }
+  .banner-5 p {
+    padding: 0 2.5rem 0 2.5rem; }
   .banner-5 .contact-info {
     padding-bottom: 1.2rem; }
   .banner-5 .skills {
