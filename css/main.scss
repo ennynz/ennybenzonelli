@@ -151,7 +151,7 @@ header {
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: 2rem;
+    bottom: 9rem;
     text-decoration: none;
     a {
       color: #f2f2f2;
@@ -166,6 +166,7 @@ header {
     bottom: 0;
     img {
       width: 100%;
+      margin-left: 12rem;
       max-width: 650px;
       min-width: 400px;
       filter: grayscale(1);
@@ -174,6 +175,7 @@ header {
   }
   .main-text {
     margin-top: 4rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -193,19 +195,19 @@ header {
   position: relative;
   padding: 5rem 7rem 0 7rem;
   .about {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
   }
   h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
     font-size: 2.5rem;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
   }
   p {
     margin-top: 2rem;
     color: #989090;
-    text-align: left;
+    text-align: center;
     line-height: 1.8rem;
   }
   .video {
@@ -265,6 +267,7 @@ header {
     color: #403d3d;
     text-align: left;
     line-height: 1.8rem;
+    font-size: 1.5rem;
   }
   h3 {
     text-transform: uppercase;
@@ -304,7 +307,6 @@ header {
   background-image: -webkit-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
   background-image: -ms-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
   background-image: linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
-  background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -323,6 +325,7 @@ header {
   text-align: justify;
   line-height: 1.8rem;
   padding: 0 1rem;
+  font-size: 1.5rem;  
   }
   a {
   transition: all 300ms ease;
@@ -352,6 +355,7 @@ header {
     }
   p {
     padding: 0 2.5rem 0 2.5rem;
+    font-size: 1.5rem;
   }
   .contact-info {
     padding-bottom: 1.2rem;
@@ -366,10 +370,7 @@ header {
   }
 }
 .contact-pic {
-  position: relative;
-  bottom: -2.5rem;
-  margin: 0 auto;
-  width: 100%;
+  display: none;
 }
 
 //FORM
@@ -389,8 +390,8 @@ input, textarea {
 }
 
 textarea {
-  width: 24rem;
-  max-width: 24rem;
+  width: 48rem;
+  max-width: 48rem;
   height: 9rem;
   line-height: 150%;
 }

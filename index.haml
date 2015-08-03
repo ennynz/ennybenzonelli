@@ -51,7 +51,7 @@
     %header#sctn-0
       .main
         .row
-          .small-12.medium-6.columns
+          .small-12.medium-12.large-6.columns
             .main-text
               %object.main-logo
                 %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
@@ -60,12 +60,12 @@
                 = succeed "BENZONELLI" do
                   %br/
               %h2.subtitle editor, designer &amp;<br> radio host
-          .small-12.medium-6.columns   
+          .small-12.medium-12.large-6.columns   
             .main-pic
               %img{:src => "img/enny-portrait.png", :alt => ""}/
-      .scroll-down
-        %a.smoothScroll{:href => '#sctn-1'}
-          %i.fa.fa-arrow-circle-down
+            .scroll-down
+              %a.smoothScroll{:href => '#sctn-1'}
+                %i.fa.fa-arrow-circle-down
     
     %section#sctn-1
       .banner-1
@@ -74,9 +74,9 @@
             .small-12.columns
               %h2
                 From Finance to Media
-            .small-12.medium-pull-12.large-push-6.columns
+            .small-12.medium-pull-12.large-6.columns
               %img{:src => "img/banker-editor-cartoon.png", :alt => ""}/
-            .small-12.medium-12.large-pull-6.columns
+            .small-12.medium-12.large-6.columns.about
               %p
                 It takes a lot of courage to jump from a career to another, but when you do it, the rewards are priceless.
               %p
@@ -156,8 +156,11 @@
               Contact me
             %p.contact-info
               Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
-        .row
-          .small-12.medium-12.large-push-6.columns
+        .row 
+          .small-12.medium-12.large-6.columns
+            .contact-pic
+              %img{:src => "img/contact-me2.png", :alt => ""}/
+          .small-12.medium-12.large-6.columns
             .container-5a
               %form.contact-form{:action => "https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c", :method => "post"}
                 / the redirect_to is optional, the form will redirect to the referrer on submission
@@ -178,10 +181,7 @@
                 %p.message
                   %textarea.feedback{:name => "feedback"}
                 %p.submit    
-                  %input{:type => "button", :value => "SEND"}/ 
-          .small-12.medium-12.large-pull-6.columns
-            .contact-pic
-              %img{:src => "img/contact-me2.png", :alt => ""}/
+                  %input{:type => "button", :value => "SEND"}/
     %section#sctn-6
       .footer
         &nbsp;

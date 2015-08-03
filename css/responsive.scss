@@ -60,3 +60,50 @@
     }
   }
 }
+
+//LARGE SCREENS
+
+@media (min-width: 1025px) {
+  header {
+    .scroll-down {
+      text-align: left;
+    }
+  }
+  .main-pic {
+    img {
+      margin-left: 0rem !important;
+    }
+  }
+  .banner-1 {
+    p {
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
+  .banner-2 {
+    p {
+      font-size: 1rem;
+    }
+  }  
+  .banner-4 {
+    background-attachment: fixed;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .banner-5 {
+    p {
+      font-size: 1rem;
+    }
+  }
+  .contact-pic {
+    display: inline;
+    position: relative;
+    bottom: -2.5rem;
+    margin: 0 auto;
+    width: 50%;
+  }
+  textarea {
+    width: 30rem;
+  }
+}
