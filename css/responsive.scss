@@ -1,6 +1,6 @@
 /*SMALL SCREENS*/
 
-@media (max-width: 850px) {
+@media (max-width: 640px) {
   nav {
     ul {
       width: 12rem;
@@ -34,6 +34,29 @@
     .show-menu {
       margin-right: -5rem;
       opacity: 1;
+    }
+  }
+}
+
+//MEDIUM SCREENS
+
+@media (min-width: 641px) {
+  header {
+    .title {
+      font-size: 5.5rem;
+      margin-top: 0;
+      text-align: left;
+      line-height: 5rem;
+      transform: translateY(-50%);
+      padding-left: 5rem;
+    }
+    .subtitle {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.75rem;
+    text-align: left;
+    line-height: 3rem;
+    transform: translateY(-50%);
+    padding-left: 5rem;
     }
   }
 }

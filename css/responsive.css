@@ -1,12 +1,13 @@
 /*SMALL SCREENS*/
-@media (max-width: 850px) {
+@media (max-width: 640px) {
   nav ul {
     width: 12rem;
     opacity: 1;
     margin-top: 3rem;
     margin-right: -17rem;
     background-color: #4f4f4f;
-    transition: all 400ms ease; }
+    -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -15,7 +16,8 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    transition: all 100ms ease; }
+    -webkit-transition: all 100ms ease;
+            transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
@@ -26,3 +28,22 @@
   nav .show-menu {
     margin-right: -5rem;
     opacity: 1; } }
+@media (min-width: 641px) {
+  header .title {
+    font-size: 5.5rem;
+    margin-top: 0;
+    text-align: left;
+    line-height: 5rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding-left: 5rem; }
+  header .subtitle {
+    font-family: 'Poiret One', cursive;
+    font-size: 2.75rem;
+    text-align: left;
+    line-height: 3rem;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    padding-left: 5rem; } }
