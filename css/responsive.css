@@ -26,31 +26,7 @@
   nav .show-menu {
     margin-right: -5rem;
     opacity: 1; } }
-@media (min-width: 641px) {
-  header .title {
-    font-size: 5.5rem;
-    margin-top: 0;
-    text-align: left;
-    line-height: 5rem;
-    transform: translateY(-50%);
-    padding-left: 5rem; }
-  header .subtitle {
-    font-family: 'Poiret One', cursive;
-    font-size: 2.75rem;
-    text-align: left;
-    line-height: 3rem;
-    transform: translateY(-50%);
-    padding-left: 5rem; } }
-.main-pic img {
-  width: 100px; }
-
 @media (min-width: 1024px) {
-  header .scroll-down {
-    text-align: left; }
-
-  .main-pic img {
-    margin-left: 0rem !important; }
-
   .banner-1 p {
     text-align: left;
     font-size: 1rem; }

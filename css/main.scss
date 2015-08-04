@@ -105,79 +105,37 @@ header {
   padding-top: 0;
   height: 100vh;
   position: relative;
-  embed {
-    width: 6rem;
-    position: relative;
-    margin: 0 0 5rem 5rem;
-  }
-  .main {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  .row {
-    max-width: 95%;
-    max-height: 100%;
-  }
   h1 {
-    font-size: 4rem;
+    font-family: 'Poiret One', cursive;  
+    font-size: 3rem;
     color: #40c0c9;
-  }
-  h2 {
-    color: #f2f2f2;
-  }
-  .title {
-    font-family: 'Poiret One', cursive;
-//    font-size: 5.5rem;
-//    margin-top: 0;
-//    text-align: left;
-//    line-height: 5rem;
-//    transform: translateY(-50%);
-//    padding-left: 5rem;
-  }
-  .subtitle {
-    font-family: 'Poiret One', cursive;
-    font-size: 2.75rem;
-    text-align: left;
+    text-transform: uppercase;
     line-height: 3rem;
-    transform: translateY(-50%);
-    padding-left: 5rem;
   }
-  .scroll-down {
+  p {
+    font-family: 'Poiret One', cursive;
     color: #f2f2f2;
-    font-size: 4rem;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 9rem;
-    text-decoration: none;
-    a {
-      color: #f2f2f2;
-      opacity: 0.60;
-      transition: all 500ms ease;
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-  .main-pic {
-    bottom: 0;
-    img {
-      width: 100%;
-      margin-left: 12rem;
-      max-width: 650px;
-      min-width: 400px;
-      filter: grayscale(1);
-      -webkit-filter: grayscale(1);
-    }
-  }
-  .main-text {
-    margin-top: 4rem;
-    margin-bottom: 5rem;
+    font-size: 1.3rem;
+    padding-top: .5rem;
   }
 }
+.header-wrap {
+  height: 100%;
+}
+.header-img {
+  background-image: url("../img/enny-portrait.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 70%;
+  
+
+}
+.header-text {
+  height: 30%;
+  padding: 2rem 0 0 1.5rem; 
+}
+
 
 //INTRO
 

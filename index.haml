@@ -2,6 +2,7 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %title Enny Benzonelli | Web Designer, Editor &amp; Radio Host
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/foundation.css", :rel => "stylesheet"}/
@@ -49,24 +50,15 @@
             %a.smoothScroll{:href => '#sctn-5'}
               CONTACT
     %header#sctn-0
-      .main
-        .row
-          .small-12.medium-12.large-6.columns
-            .main-text
-              %object.main-logo
-                %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
-              %h1.title
-                %span{:style => "color: #f2f2f2"} ENNY
-                = succeed "BENZONELLI" do
-                  %br/
-              %h2.subtitle editor, designer &amp;<br> radio host
-          .small-12.medium-12.large-6.columns   
-            .main-pic
-              %img{:src => "img/enny-portrait.png", :alt => ""}/
-            .scroll-down
-              %a.smoothScroll{:href => '#sctn-1'}
-                %i.fa.fa-arrow-circle-down
-    
+      .header-wrap
+        .header-text
+          %h1
+            %span{:style => "color: #f2f2f2"} ENNY
+            = succeed "BENZONELLI" do
+              %br/
+          %p
+            Editor, Web Designer &amp; Radio Host.
+        .header-img
     %section#sctn-1
       .banner-1
         .container-1
