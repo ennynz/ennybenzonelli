@@ -60,10 +60,15 @@
     }
   }
 }
+.main-pic {
+  img {
+    width: 100px;
+  }
+}
 
 //LARGE SCREENS
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   header {
     .scroll-down {
       text-align: left;
@@ -107,3 +112,4 @@
     width: 30rem;
   }
 }
+

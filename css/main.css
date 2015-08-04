@@ -44,8 +44,7 @@ nav {
       color: #f2f2f2;
       padding: .8rem;
       font-size: 1rem;
-      -webkit-transition: all 300ms ease;
-              transition: all 300ms ease; }
+      transition: all 300ms ease; }
       nav li a:hover {
         color: #40c0c9; }
   nav .menu-button {
@@ -60,13 +59,11 @@ nav {
 
 .is-hidden {
   opacity: 0;
-  -webkit-transition: opacity 600ms ease;
-          transition: opacity 600ms ease; }
+  transition: opacity 600ms ease; }
 
 .is-showing {
   opacity: 1;
-  -webkit-transition: opacity 600ms ease;
-          transition: opacity 600ms ease; }
+  transition: opacity 600ms ease; }
 
 .top-bar {
   height: 5rem;
@@ -76,7 +73,9 @@ nav {
   z-index: 200;
   background-color: #4f4f4f;
   -webkit-transform: skew(0deg, -1deg);
+  -moz-transform: skew(0deg, -1deg);
   -ms-transform: skew(0deg, -1deg);
+  -o-transform: skew(0deg, -1deg);
   transform: skew(0deg, -1deg); }
 
 header {
@@ -113,9 +112,7 @@ header {
     font-size: 2.75rem;
     text-align: left;
     line-height: 3rem;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     padding-left: 5rem; }
   header .scroll-down {
     color: #f2f2f2;
@@ -128,8 +125,7 @@ header {
     header .scroll-down a {
       color: #f2f2f2;
       opacity: 0.60;
-      -webkit-transition: all 500ms ease;
-              transition: all 500ms ease; }
+      transition: all 500ms ease; }
       header .scroll-down a:hover {
         opacity: 1; }
   header .main-pic {
@@ -207,9 +203,7 @@ header {
     right: 6rem;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    transform: translateY(-50%); }
   .banner-2 h2 {
     color: #0d454a;
     font-family: 'Poiret One', cursive;
@@ -251,7 +245,9 @@ header {
 .banner-4 {
   width: 100%;
   height: auto;
+  background-image: -moz-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
   background-image: -webkit-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-image: -ms-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
   background-image: linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -272,8 +268,7 @@ header {
     padding: 0 1rem;
     font-size: 1.5rem; }
   .banner-4 a {
-    -webkit-transition: all 300ms ease;
-            transition: all 300ms ease; }
+    transition: all 300ms ease; }
     .banner-4 a:hover {
       color: #40c0c9; }
 
@@ -328,8 +323,7 @@ textarea {
   line-height: 150%; }
 
 input, textarea {
-  -webkit-transition: all 500ms ease;
-          transition: all 500ms ease; }
+  transition: all 500ms ease; }
   input:hover, textarea:hover {
     border-color: #40c0c9;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 0.5rem; }
@@ -351,8 +345,7 @@ input, textarea {
   font-size: .8rem;
   color: #fff;
   border-radius: .5rem;
-  -webkit-transition: all 500ms ease;
-          transition: all 500ms ease; }
+  transition: all 500ms ease; }
   .submit input:hover {
     background: #40c0c9; }
 
@@ -362,13 +355,14 @@ input, textarea {
   height: 10rem;
   background-color: #4f4f4f;
   -webkit-transform: skew(0deg, -1deg);
+  -moz-transform: skew(0deg, -1deg);
   -ms-transform: skew(0deg, -1deg);
+  -o-transform: skew(0deg, -1deg);
   transform: skew(0deg, -1deg);
   margin-top: -0.8rem; }
 #sctn-6 .webkea a {
   color: #fff;
-  -webkit-transition: all 300ms ease;
-          transition: all 300ms ease; }
+  transition: all 300ms ease; }
   #sctn-6 .webkea a:hover {
     color: #40c0c9; }
 #sctn-6 .container-footer {
@@ -389,7 +383,6 @@ input, textarea {
       color: #f2f2f2;
       padding: .8rem;
       font-size: 1rem;
-      -webkit-transition: all 300ms ease;
-              transition: all 300ms ease; }
+      transition: all 300ms ease; }
       #sctn-6 .container-footer li a:hover {
         color: #40c0c9; }

@@ -6,8 +6,7 @@
     margin-top: 3rem;
     margin-right: -17rem;
     background-color: #4f4f4f;
-    -webkit-transition: all 400ms ease;
-            transition: all 400ms ease; }
+    transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -16,8 +15,7 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    -webkit-transition: all 100ms ease;
-            transition: all 100ms ease; }
+    transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
@@ -34,20 +32,19 @@
     margin-top: 0;
     text-align: left;
     line-height: 5rem;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     padding-left: 5rem; }
   header .subtitle {
     font-family: 'Poiret One', cursive;
     font-size: 2.75rem;
     text-align: left;
     line-height: 3rem;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     padding-left: 5rem; } }
-@media (min-width: 1025px) {
+.main-pic img {
+  width: 100px; }
+
+@media (min-width: 1024px) {
   header .scroll-down {
     text-align: left; }
 
