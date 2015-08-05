@@ -52,6 +52,8 @@
     %header#sctn-0
       .header-wrap
         .header-text
+          %object.header-logo
+            %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
           %h1
             %span{:style => "color: #f2f2f2"} ENNY
             = succeed "BENZONELLI" do
@@ -75,7 +77,7 @@
                 In 2009 I've decided to leave my profession in the financial sector to start a new adventure. Since then a lot of things have happened. Take a look to my showreel to have a sneak peak at my editor and designer skills.
             .small-12.columns
               .video
-                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}      
+                %iframe{:allowfullscreen => "", :frameborder => "0", :height => "315", :src => "https://www.youtube.com/embed/nwySvEfundU", :width => "560"}
     %section#sctn-2
       .banner-2
         .hanging-pic
@@ -120,7 +122,7 @@
             %h3
               Graphic Designer
           .small-6.medium-4.columns.skills
-            %i 
+            %i
               .fa.fa-music.fa-2x
             %h3
               Radio Host
@@ -135,7 +137,7 @@
               Join the tribe of <a href ="www.kickarts.org.nz">KickArts</a>, Auckland's comprehensive artshow, on air every Sunday on 104.6 FM - Auckland area only - or on the <a href="www.planetaudio.org.nz/kickarts">PlanetAudio</a> website.
             %p
               I've the imponderable joy to be Richard Green's co-host and when he is on holiday I will run the show. It is a fun adventure that is lasting for over 3 years and our audience is growing every week.
-          .medium-6.columns    
+          .medium-6.columns
             %p
               Other then working on the show itself I've coded and designed the <a href ="www.kickarts.org.nz">KickArts</a> webpage at <a href ="www.webkea.co.nz">WebKea</a> with the help of my colleague Benji Dalton.
             %p
@@ -148,7 +150,7 @@
               Contact me
             %p.contact-info
               Get in touch if you need my help in your project. I'm sure we can find the perfect deal for a great collaboration.
-        .row 
+        .row
           .small-12.medium-12.large-6.columns
             .contact-pic
               %img{:src => "img/contact-me2.png", :alt => ""}/
@@ -166,18 +168,18 @@
                   %label Last Name
                 %p.phone
                   %input.form-control{:name => "phone", :type => "text"}/
-                  %label Phone Number
+                  %label Phone
                 %p.email
                   %input.form-control{:name => "email", :type => "email"}/
                   %label Email
                 %p.message
                   %textarea.feedback{:name => "feedback"}
-                %p.submit    
+                %p.submit
                   %input{:type => "button", :value => "SEND"}/
     %section#sctn-6
       .footer
         &nbsp;
-      .container-footer  
+      .container-footer
         %p
           &copy; Enny Benzonelli, 2015
         %p.webkea
@@ -185,11 +187,10 @@
         %ul.social-links
           %li.social-icons
             %a{:href => 'https://nz.linkedin.com/pub/enny-benzonelli/2b/328/179', :target => '_blank'}
-              .fa.fa-linkedin-square.fa-2x  
+              .fa.fa-linkedin-square.fa-2x
           %li.social-icons
             %a{:href => 'https://twitter.com/Enny_NZwww', :target => '_blank'}
-              .fa.fa-twitter-square.fa-2x            
+              .fa.fa-twitter-square.fa-2x
           %li.social-icons
             %a{:href => 'https://instagram.com/ennynz/', :target => '_blank'}
-              .fa.fa-instagram.fa-2x            
-     
+              .fa.fa-instagram.fa-2x

@@ -67,6 +67,7 @@ nav {
     color: #fff;
     line-height: 3rem;
     margin-right: 3rem;
+    margin-top: .55rem;
   }
   .menu-close {
     display: none;
@@ -105,8 +106,19 @@ header {
   padding-top: 0;
   height: 100vh;
   position: relative;
+  embed {
+    height: 4rem;
+  }
+  .header-logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: .5rem;
+  }
   h1 {
-    font-family: 'Poiret One', cursive;  
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Poiret One', cursive;
     font-size: 3rem;
     color: #40c0c9;
     text-transform: uppercase;
@@ -115,7 +127,7 @@ header {
   p {
     font-family: 'Poiret One', cursive;
     color: #f2f2f2;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding-top: .5rem;
   }
 }
@@ -128,12 +140,12 @@ header {
   background-repeat: no-repeat;
   background-position: right bottom;
   height: 70%;
-  
+
 
 }
 .header-text {
   height: 30%;
-  padding: 2rem 0 0 1.5rem; 
+  padding: 2rem 0 0 1.5rem;
 }
 
 
@@ -151,14 +163,14 @@ header {
 }
 .container-1 {
   position: relative;
-  padding: 5rem 7rem 0 7rem;
+  padding: 5rem 1rem 0 1rem;
   .about {
     margin-bottom: 4rem;
   }
   h2 {
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
   }
@@ -181,7 +193,7 @@ header {
       left: 0;
       width: 80%;
       height: 80%;
-    }    
+    }
   }
   img {
     width: 94%;
@@ -202,12 +214,13 @@ header {
   img {
     position: absolute;
     display: inline;
+    width: 40%;
   }
   .container-2 {
-    padding: 1rem;
+    padding: .5rem;
     background: rgba(203, 203, 203, 0.50);
-    width: 60%;
-    right: 6rem;
+    width: 80%;
+    right: 10%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -216,25 +229,17 @@ header {
     color: #0d454a;
     font-family: 'Poiret One', cursive;
     font-weight: 700;
-    font-size: 2.5rem;
-    text-align: left;
+    font-size: 2rem;
+    text-align: center;
     text-transform: uppercase;
+    padding-left: 5rem
   }
   p {
     margin-top: 2rem;
     color: #403d3d;
-    text-align: left;
+    text-align: center;
     line-height: 1.8rem;
-    font-size: 1.5rem;
   }
-  h3 {
-    text-transform: uppercase;
-    color: #40c0c9;
-    text-shadow: 1px 1px 2px black;
-    font-size: 1.2rem;
-    padding-top: .8rem;
-  }
-
 }
 
 .banner-3 {
@@ -244,10 +249,10 @@ header {
   h2{
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 2.5rem 0 2.5rem 0;
+    padding: 2.5rem 1rem 2.5rem 1rem;
   }
   .skills {
     text-align: center;
@@ -272,7 +277,7 @@ header {
   h2{
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     padding: 5rem 0 2.5rem 0;
@@ -280,10 +285,8 @@ header {
   p {
   margin-top: 2rem;
   color: #f2f2f2;
-  text-align: justify;
+  text-align: center;
   line-height: 1.8rem;
-  padding: 0 1rem;
-  font-size: 1.5rem;  
   }
   a {
   transition: all 300ms ease;
@@ -301,19 +304,18 @@ header {
   }
   .container-5a {
     position: relative;
-    margin: 2.5rem 0 2rem 3.5rem;
+    margin: 2.5rem 0 2rem 1rem;
   }
   h2{
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
     text-transform: uppercase;
-    padding: 5rem 2.5rem 1.5rem 2.5rem;
+    padding: 5rem 2.5rem 1.5rem 1rem;
     }
   p {
-    padding: 0 2.5rem 0 2.5rem;
-    font-size: 1.5rem;
+    padding: 0 0 0 1rem;
   }
   .contact-info {
     padding-bottom: 1.2rem;
@@ -340,15 +342,15 @@ input, textarea {
   font: normal .8rem/100% Helvetica, sans-serif;
   width: 14rem;
   background: #ffffff;
-  box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem; 
-  -moz-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem; 
+  box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
   -webkit-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
-  background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), color-stop(4%, #EEEEEE), to(#FFFFFF)); 
+  background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), color-stop(4%, #EEEEEE), to(#FFFFFF));
   background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
 }
 
 textarea {
-  width: 48rem;
+  width: 100%;
   max-width: 48rem;
   height: 9rem;
   line-height: 150%;
@@ -441,4 +443,3 @@ input, textarea {
     }
   }
 }
-

@@ -1,6 +1,6 @@
 /*SMALL SCREENS*/
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   nav {
     ul {
       width: 12rem;
@@ -41,31 +41,105 @@
 //MEDIUM SCREENS
 
 @media (min-width: 641px) {
-}
-
-//LARGE SCREENS
-
-@media (min-width: 1024px) {
+  header {
+    embed {
+      height: 4.5rem;
+    }
+    .header-text {
+      padding: 5rem 0 0 5rem;
+    }
+  }
   .banner-1 {
+    h2 {
+      font-size: 2.5rem;
+    }
     p {
       text-align: left;
       font-size: 1rem;
     }
   }
+  .container-1 {
+    padding: 5rem 7rem 0 7rem;
+  }
   .banner-2 {
+    h2 {
+      font-size: 2.5rem;
+      text-align: left;
+      padding-left: 0;
+    }
     p {
       font-size: 1rem;
+      text-align: left;
     }
-  }  
+    img {
+      width: auto;
+    }
+    .container-2 {
+      padding: 1rem;
+      width: 60%;
+      right: 6rem;
+      position: absolute;
+    }
+  }
+  .banner-3 {
+    h2 {
+      font-size: 2.5rem;
+      padding: 2.5rem 0 2.5rem 0;
+    }
+  }
   .banner-4 {
     background-attachment: fixed;
+    h2{
+      font-size: 2.5rem;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 5rem 0 2.5rem 0;
+    }
     p {
       font-size: 1rem;
+      padding: 0 1rem;
+      text-align: justify;
     }
   }
   .banner-5 {
+    h2 {
+    font-size: 2.5rem;
+    padding: 5rem 2.5rem 1.5rem 2.5rem;
+    }
     p {
       font-size: 1rem;
+      padding: 0 2.5rem 0 2.5rem;
+    }
+    .container-5a {
+      margin: 2.5rem 0 2rem 2.5rem;
+    }
+    .contact-form {
+      p {
+        padding: .4rem 0;
+      }
+    }
+  }
+}
+
+
+//LARGE SCREENS
+
+@media (min-width: 1024px) {
+  header {
+    h1 {
+      font-size: 5rem;
+      line-height: 4.5rem;
+    }
+    p {
+      font-size: 2.8rem;
+    }
+    embed {
+      height: 7rem;
+    }
+  }
+  .container-1 {
+    .about {
+      margin-top: 3rem;
     }
   }
   .contact-pic {
@@ -79,4 +153,3 @@
     width: 30rem;
   }
 }
-
