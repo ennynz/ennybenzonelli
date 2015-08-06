@@ -219,7 +219,7 @@ header {
   }
   .container-2 {
     padding: .5rem;
-    background: rgba(203, 203, 203, 0.50);
+    background: rgba(203, 203, 203, 0.66);
     width: 80%;
     right: 10%;
     position: absolute;
@@ -264,18 +264,17 @@ header {
     color: #40c0c9;
   }
 }
+
 .banner-4 {
   width: 100%;
   height: auto;
-  background-image: -moz-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
-  background-image: -webkit-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
-  background-image: -ms-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
-  background-image: linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-image: linear-gradient(rgba(99, 105, 109, 0.82), rgba(47, 76, 77, 0.69)), url("../img/onair.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 2rem 5rem 2rem;
   h2{
+    text-shadow: 2px 2px 19px rgba(46, 46, 46, 0.55);
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
     font-size: 2rem;
@@ -284,13 +283,15 @@ header {
     padding: 5rem 0 2.5rem 0;
   }
   p {
-  margin-top: 2rem;
-  color: #f2f2f2;
-  text-align: center;
-  line-height: 1.8rem;
+    text-shadow: 2px 2px 19px rgba(46, 46, 46, 0.55);
+    margin-top: 2rem;
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 1.8rem;
   }
   a {
-  transition: all 300ms ease;
+    text-shadow: 2px 2px 19px rgba(46, 46, 46, 0.55);
+    transition: all 300ms ease;
   &:hover {
     color: #40c0c9;
     }

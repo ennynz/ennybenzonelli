@@ -53,6 +53,7 @@
   .banner-2 img {
     width: auto; }
   .banner-2 .container-2 {
+    background: rgba(203, 203, 203, 0.5);
     padding: 1rem;
     width: 60%;
     right: 6rem;
