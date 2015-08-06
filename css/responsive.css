@@ -24,7 +24,7 @@
   nav .menu-close::after {
     content: "\2715"; }
   nav .show-menu {
-    margin-right: -5rem;
+    margin-right: 1rem;
     opacity: 1; } }
 @media (min-width: 641px) {
   header embed {

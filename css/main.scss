@@ -43,8 +43,9 @@ nav {
     color: #40c0c9;
   }
   ul {
-    float: right;
-    margin-right: 2rem;
+    position: absolute;
+    right: -1rem;
+    top: 0;
   }
   li {
     display: inline;
