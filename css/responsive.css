@@ -6,7 +6,8 @@
     margin-top: 3rem;
     margin-right: -17rem;
     background-color: #4f4f4f;
-    transition: all 400ms ease; }
+    -webkit-transition: all 400ms ease;
+            transition: all 400ms ease; }
     nav ul li {
       padding: .5rem;
       font-size: 1rem;
@@ -15,7 +16,8 @@
   nav .menu-button {
     display: block;
     cursor: pointer;
-    transition: all 100ms ease; }
+    -webkit-transition: all 100ms ease;
+            transition: all 100ms ease; }
     nav .menu-button:hover {
       color: #ddd; }
   nav .menu-open::after {
@@ -52,7 +54,8 @@
     width: auto; }
   .banner-2 .container-2 {
     padding: 1rem;
-    width: 60%;
+    width: 70%;
+    height: 100%;
     right: 6rem;
     position: absolute; }
 
