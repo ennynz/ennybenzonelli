@@ -183,7 +183,7 @@ header {
     width: 40%; }
   .banner-2 .container-2 {
     padding: .5rem;
-    background: rgba(203, 203, 203, 0.5);
+    background: rgba(203, 203, 203, 0.66);
     width: 80%;
     right: 10%;
     position: absolute;
@@ -226,13 +226,14 @@ header {
 .banner-4 {
   width: 100%;
   height: auto;
-  background-image: -webkit-linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
-  background-image: linear-gradient(rgba(99, 105, 109, 0.72), rgba(47, 76, 77, 0.59)), url("../img/onair.png");
+  background-image: -webkit-linear-gradient(rgba(99, 105, 109, 0.82), rgba(47, 76, 77, 0.69)), url("../img/onair.png");
+  background-image: linear-gradient(rgba(99, 105, 109, 0.82), rgba(47, 76, 77, 0.69)), url("../img/onair.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 2rem 5rem 2rem; }
   .banner-4 h2 {
+    text-shadow: 2px 2px 19px rgba(46, 46, 46, 0.55);
     color: #40c0c9;
     font-family: 'Poiret One', cursive;
     font-size: 2rem;
@@ -240,11 +241,13 @@ header {
     text-transform: uppercase;
     padding: 5rem 0 2.5rem 0; }
   .banner-4 p {
+    text-shadow: 2px 2px 19px rgba(46, 46, 46, 0.55);
     margin-top: 2rem;
     color: #f2f2f2;
     text-align: center;
     line-height: 1.8rem; }
   .banner-4 a {
+    text-shadow: 2px 2px 19px rgba(46, 46, 46, 0.55);
     -webkit-transition: all 300ms ease;
             transition: all 300ms ease; }
     .banner-4 a:hover {
