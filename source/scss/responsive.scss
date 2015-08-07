@@ -61,27 +61,29 @@
   .container-1 {
     padding: 5rem 7rem 0 7rem;
   }
-  .banner-2 {
-    h2 {
-      font-size: 2.5rem;
-      text-align: left;
-      padding-left: 0;
-    }
-    p {
-      font-size: 1rem;
-      text-align: left;
-    }
-    img {
-      width: auto;
-    }
-    .container-2 {
-      background: rgba(203, 203, 203, 0.5);
-      padding: 1rem;
-      width: 60%;
-      right: 6rem;
-      position: absolute;
-    }
-  }
+  // .banner-2 {
+  //   height: 32rem;
+  //   h2 {
+  //     font-size: 2.5rem;
+  //     text-align: left;
+  //     padding-left: 0;
+  //   }
+  //   p {
+  //     font-size: 1rem;
+  //     text-align: left;
+  //   }
+  //   img {
+  //     width: auto;
+  //   }
+  //   .container-2 {
+  //     background: rgba(203, 203, 203, 0.5);
+  //     padding: 1rem;
+  //     width: 60%;
+  //     top: 50%;
+  //     right: 6rem;
+  //     position: absolute;
+  //   }
+  // }
   .banner-3 {
     h2 {
       font-size: 2.5rem;
@@ -122,6 +124,30 @@
   }
 }
 
+@media (min-width: 900px) {
+  .banner-2 {
+    height: 32rem;
+    h2 {
+      font-size: 2.5rem;
+      text-align: left;
+      padding-left: 0;
+    }
+    p {
+      font-size: 1rem;
+      text-align: left;
+    }
+    img {
+      width: auto;
+    }
+    .container-2 {
+      padding: 1rem;
+      width: 60%;
+      top: 50%;
+      right: 6rem;
+      position: absolute;
+    }
+  }
+}
 
 //LARGE SCREENS
 
@@ -141,6 +167,11 @@
   .container-1 {
     .about {
       margin-top: 3rem;
+    }
+  }
+  .banner-2 {
+    .container-2 {
+      background: rgba(203, 203, 203, 0.55);
     }
   }
   .contact-pic {

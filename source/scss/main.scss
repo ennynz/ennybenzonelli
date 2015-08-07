@@ -205,7 +205,7 @@ header {
 
 .banner-2 {
   width: 100%;
-  height: 32rem;
+  height: 50rem;
   background-image: url(../img/sky.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -219,11 +219,11 @@ header {
   }
   .container-2 {
     padding: .5rem;
-    background: rgba(203, 203, 203, 0.66);
+    background: rgba(203, 203, 203, 0.85);
     width: 80%;
     right: 10%;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
   }
   h2 {
@@ -233,7 +233,6 @@ header {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    padding-left: 5rem
   }
   p {
     margin-top: 2rem;
@@ -335,66 +334,8 @@ header {
   display: none;
 }
 
-//FORM
+@import 'form';
 
-input, textarea {
-  padding: .5rem;
-  border: solid 1px #E5E5E5;
-  outline: 0;
-  font: normal .8rem/100% Helvetica, sans-serif;
-  width: 14rem;
-  background: #ffffff;
-  box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
-  -moz-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
-  -webkit-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
-  background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), color-stop(4%, #EEEEEE), to(#FFFFFF));
-  background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
-}
-
-textarea {
-  width: 100%;
-  max-width: 48rem;
-  height: 9rem;
-  line-height: 150%;
-}
-
-input, textarea {
-  transition: all 500ms ease;
-  &:hover {
-    border-color: #40c0c9;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 .5rem;
-  }
-  &:focus {
-    border-color: #40c0c9;
-  }
-}
-
-.contact-form {
-  label {
-    margin-left: .7rem;
-    font-size: .8rem;
-    color: #5d5959;
-  }
-  p {
-    padding: .4rem 0;
-  }
-}
-
-.submit {
-  input {
-    width: auto;
-    padding: .5rem 1rem;
-    background: #403d3d;
-    border: 0;
-    font-size: .8rem;
-    color: #fff;
-    border-radius: .5rem;
-    transition: all 500ms ease;
-    &:hover {
-      background: #40c0c9;
-    }
-  }
-}
 #sctn-6 {
   .footer {
     position: absolute;

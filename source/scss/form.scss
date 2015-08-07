@@ -1,0 +1,58 @@
+input, textarea {
+  padding: .5rem;
+  border: solid 1px #E5E5E5;
+  outline: 0;
+  font: normal .8rem/100% Helvetica, sans-serif;
+  width: 14rem;
+  background: #ffffff;
+  box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0 0 .5rem;
+  background: -webkit-gradient(linear, left top, left 25, from(#EEEEEE), color-stop(4%, #EEEEEE), to(#FFFFFF));
+  background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+}
+
+textarea {
+  width: 100%;
+  max-width: 48rem;
+  height: 9rem;
+  line-height: 150%;
+}
+
+input, textarea {
+  transition: all 500ms ease;
+  &:hover {
+    border-color: #40c0c9;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 .5rem;
+  }
+  &:focus {
+    border-color: #40c0c9;
+  }
+}
+
+.contact-form {
+  label {
+    margin-left: .7rem;
+    font-size: .8rem;
+    color: #5d5959;
+  }
+  p {
+    padding: .4rem 0;
+  }
+}
+
+.submit {
+  input {
+    width: auto;
+    padding: .5rem 1rem;
+    background: #403d3d;
+    border: 0;
+    font-size: .8rem;
+    color: #fff;
+    border-radius: .5rem;
+    transition: all 500ms ease;
+    &:hover {
+      background: #40c0c9;
+    }
+  }
+}
