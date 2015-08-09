@@ -17,7 +17,7 @@
     <script src='js/min/jquery-1.11.3.min.js'></script>
     <script src='js/min/skrollr.js'></script>
     <script src='js/min/app-min.js'></script>
-    <script src='js/smoothscroll.js' type='text/javascript'></script>
+    <script src='js/min/smoothscroll.js' type='text/javascript'></script>
   </head>
   <body>
     <div class='menu is-hidden'>
@@ -80,6 +80,11 @@
           </p>
         </div>
         <div class='header-img'></div>
+      </div>
+      <div class='arrow-down'>
+        <a class='smoothScroll' href='#sctn-1'>
+          <div class='fa fa-arrow-circle-down fa-3x'></div>
+        </a>
       </div>
     </header>
     <section id='sctn-1'>
@@ -237,7 +242,7 @@
             <div class='container-5a'>
               <form action='https://getsimpleform.com/messages?form_api_token=a57405a0851707c0d44897fdab40394c' class='contact-form' method='post'>
                 <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                <input name='redirect_to' type='hidden' value='thankyou.html'>
+                <input name='redirect_to' type='hidden' value='http://ennybenzonelli.com/thankyou.html'>
                 <!-- all your input fields here.... -->
                 <p class='firstname'>
                   <input class='form-control' name='firstname' required='' type='text'>
@@ -259,7 +264,7 @@
                   <textarea class='feedback' name='feedback'></textarea>
                 </p>
                 <p class='submit'>
-                  <input type='button' value='SEND'>
+                  <input type='submit' value='SEND'>
                 </p>
               </form>
             </div>

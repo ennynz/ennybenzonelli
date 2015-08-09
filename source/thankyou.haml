@@ -2,11 +2,13 @@
 %html{:lang => "en"}
   %head
     %meta{:charset => "UTF-8"}/
-    %title Enny Benzonelli | Thank you!
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Enny Benzonelli | Web Designer, Editor &amp; Radio Host
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/foundation.css", :rel => "stylesheet"}/
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
+    %link{:href => "css/responsive.css", :rel => "stylesheet"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Poppins:300,400,700", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "http://fonts.googleapis.com/css?family=Poiret+One", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "img/favicon.png", :rel => "icon"}/
@@ -15,24 +17,20 @@
     %script{:src => "js/min/jquery-1.11.3.min.js"}
     %script{:src => "js/min/skrollr.js"}
     %script{:src => "js/min/app-min.js"}
-    %script{:src => "js/smoothscroll.js", :type => "text/javascript"}
+    %script{:src => "js/min/smoothscroll.js", :type => "text/javascript"}
   %body
     %header#sctn-0
-      .main
-        .row
-          .small-12.medium-6.columns
-            .main-text
-              %object.main-logo
-                %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
-              %h1.title
-                %span{:style => "color: #f2f2f2"} THANK
-                = succeed "YOU!" do
-                  %br/
-              %h2.subtitle I will be in touch as soon as possible.
-          .small-12.medium-6.columns   
-            .main-pic
-              %img{:src => "img/enny-portrait.png", :alt => ""}/
-      .scroll-down
+      .header-wrap
+        .header-text
+          %object.header-logo
+            %embed{:src => "img/svg-logo/enny-logo.svg", :type => ""}/
+          %h1
+            %span{:style => "color: #f2f2f2"} THANK
+            = succeed "YOU" do
+              %br/
+          %p
+            I'll get back to you as soon as possible.
+        .header-img
+      .arrow-down
         %a.smoothScroll{:href => 'index.html#sctn-1'}
-          %i.fa.fa-arrow-circle-down
-    
+          .fa.fa-arrow-circle-down.fa-3x
