@@ -12,13 +12,9 @@ $(document).ready(function() {
     var y = $(this).scrollTop();
 
     if (y > 600) {
-      $('.menu').removeClass('is-hidden').addClass('is-showing');
+      $('.top-bar').removeClass('is-hidden').addClass('is-showing');
     } else {
-      $('.menu').removeClass('is-showing').addClass('is-hidden');
+      $('.top-bar').removeClass('is-showing').addClass('is-hidden');
     }
-  });  
+  });
 });
-
-
-
-
